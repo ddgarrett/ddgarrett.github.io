@@ -2,13 +2,13 @@
 <head>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<title>April 2023 Japan Trip</title>
+<title>April & May 2023 - Japan Trip</title>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&key=AIzaSyAAmtAIf4UsOHP_czPJV4Sb2vSDPaFPfOM"></script>
 <script type="text/javascript">
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
             zoom: 5,
-            center: new google.maps.LatLng(33.565599, 132.729054)
+            center: new google.maps.LatLng(33.577644, 133.065089)
         });
 
         var marker_icon_FF0000 = {
@@ -17,14 +17,14 @@
         };
 
         var info_marker_0 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.643422, 139.780772),
+            position: new google.maps.LatLng(35.643436, 139.780800),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_0 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/tokyo-japan.html" target="_blank">April 18, 2023 - Tokyo Fish Market</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230417_210042230.jpg" target="_blank">04/18/2023 - PXL_20230417_210042230.jpg</a>'
         });
         
         info_marker_0.addListener('click', function() {
@@ -32,14 +32,14 @@
         });
 
         var info_marker_1 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.713136, 139.770478),
+            position: new google.maps.LatLng(35.710097, 139.769564),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_1 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/tokyo-japan.html" target="_blank">April 18, 2023 - Tokyo Shinobazu no Ike Pond</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230418_044342953.jpg" target="_blank">04/18/2023 - PXL_20230418_044342953.jpg</a>'
         });
         
         info_marker_1.addListener('click', function() {
@@ -54,7 +54,7 @@
         });
 
         var info_window_2 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/tokyo-japan.html" target="_blank">April 18, 2023 - Tokyo Sensō-ji Temple</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230418_054022312.jpg" target="_blank">04/18/2023 - PXL_20230418_054022312.jpg</a>'
         });
         
         info_marker_2.addListener('click', function() {
@@ -69,7 +69,7 @@
         });
 
         var info_window_3 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/tokyo-japan.html" target="_blank">April 18, 2023 - Tokyo Shinjuku Evening Tour</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230418_093704128.jpg" target="_blank">04/18/2023 - PXL_20230418_093704128.jpg</a>'
         });
         
         info_marker_3.addListener('click', function() {
@@ -84,103 +84,97 @@
         });
 
         var info_window_4 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/second-day-in-tokyo.html" target="_blank">April 19, 2023 - Tokyo Day 2 - Imperial Palace</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230419_011526744.jpg" target="_blank">04/19/2023 - PXL_20230419_011526744.jpg</a>'
         });
         
         info_marker_4.addListener('click', function() {
             info_window_4.open(map, info_marker_4);
         });
 
-        /*  Remove Stop on way to Yokohama
         var info_marker_5 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.659272, 139.700872),
-            label: "I",
-            icon: marker_icon_FF0000,
-            map: map
-        });
-
-        var info_window_5 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-04-20/PXL_20230419_235544247.jpg" target="_blank">- /2023-04_japan/2023-04-20/PXL_20230419_235544247.jpg</a>'
-        });
-        
-        info_marker_5.addListener('click', function() {
-            info_window_5.open(map, info_marker_5);
-        });
-        */
-
-        var info_marker_6 = new google.maps.Marker({
             position: new google.maps.LatLng(35.451517, 139.646764),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
-        var info_window_6 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/cruise-1-leaving-yokohama.html" target="_blank">April 20, 2023 - Cruise 1 Yokohama</a>'
+        var info_window_5 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/#PXL_20230420_063053296.jpg" target="_blank">04/20/2023 - PXL_20230420_063053296.jpg</a>'
         });
         
-        info_marker_6.addListener('click', function() {
-            info_window_6.open(map, info_marker_6);
+        info_marker_5.addListener('click', function() {
+            info_window_5.open(map, info_marker_5);
         });
 
-        /* Remove 2nd marker 
-        var info_marker_7 = new google.maps.Marker({
+        var info_marker_6 = new google.maps.Marker({
             position: new google.maps.LatLng(36.374839, 140.455708),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
+        var info_window_6 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/#PXL_20230421_010045465.jpg" target="_blank">04/21/2023 - PXL_20230421_010045465.jpg</a>'
+        });
+        
+        info_marker_6.addListener('click', function() {
+            info_window_6.open(map, info_marker_6);
+        });
+
+        var info_marker_7 = new google.maps.Marker({
+            position: new google.maps.LatLng(36.404064, 140.599628),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
         var info_window_7 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/ibaraki.html" target="_blank">April 21, 2023 - Ibaraki</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230421_043134673.jpg" target="_blank">04/21/2023 - PXL_20230421_043134673.jpg</a>'
         });
         
         info_marker_7.addListener('click', function() {
             info_window_7.open(map, info_marker_7);
         });
-        */
 
         var info_marker_8 = new google.maps.Marker({
-            position: new google.maps.LatLng(36.400600, 140.593644),
+            position: new google.maps.LatLng(39.629214, 141.969658),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_8 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/ibaraki.html" target="_blank">April 21, 2023 - Ibaraki</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230421_225149804.jpg" target="_blank">04/22/2023 - PXL_20230421_225149804.jpg</a>'
         });
         
         info_marker_8.addListener('click', function() {
             info_window_8.open(map, info_marker_8);
         });
 
-        /* Remove similar marker
         var info_marker_9 = new google.maps.Marker({
-            position: new google.maps.LatLng(36.376158, 140.451378),
+            position: new google.maps.LatLng(39.649731, 141.980069),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_9 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/ibaraki.html" target="_blank">April 21, 2023 - Ibaraki</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230422_001945936.jpg" target="_blank">04/22/2023 - PXL_20230422_001945936.jpg</a>'
         });
         
         info_marker_9.addListener('click', function() {
             info_window_9.open(map, info_marker_9);
         });
-        */
 
         var info_marker_10 = new google.maps.Marker({
-            position: new google.maps.LatLng(36.406408, 140.600353),
+            position: new google.maps.LatLng(40.832331, 140.745767),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_10 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/ibaraki.html" target="_blank">April 21, 2023 - Ibaraki</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230422_225646693.jpg" target="_blank">04/23/2023 - PXL_20230422_225646693.jpg</a>'
         });
         
         info_marker_10.addListener('click', function() {
@@ -188,14 +182,14 @@
         });
 
         var info_marker_11 = new google.maps.Marker({
-            position: new google.maps.LatLng(39.629214, 141.969658),
+            position: new google.maps.LatLng(40.829550, 140.736142),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_11 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/miyako.html" target="_blank">April 22, 2023 - Miyako</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230423_003800892.jpg" target="_blank">04/23/2023 - PXL_20230423_003800892.jpg</a>'
         });
         
         info_marker_11.addListener('click', function() {
@@ -203,14 +197,14 @@
         });
 
         var info_marker_12 = new google.maps.Marker({
-            position: new google.maps.LatLng(39.649731, 141.980069),
+            position: new google.maps.LatLng(40.607411, 140.468269),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_12 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/miyako.html" target="_blank">April 22, 2023 - Miyako</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230423_025652149.jpg" target="_blank">04/23/2023 - PXL_20230423_025652149.jpg</a>'
         });
         
         info_marker_12.addListener('click', function() {
@@ -218,14 +212,14 @@
         });
 
         var info_marker_13 = new google.maps.Marker({
-            position: new google.maps.LatLng(40.829558, 140.735539),
+            position: new google.maps.LatLng(40.607681, 140.463761),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_13 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/aomori.html" target="_blank">April 23, 2023 - Aomori</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230423_035412485.jpg" target="_blank">04/23/2023 - PXL_20230423_035412485.jpg</a>'
         });
         
         info_marker_13.addListener('click', function() {
@@ -233,14 +227,14 @@
         });
 
         var info_marker_14 = new google.maps.Marker({
-            position: new google.maps.LatLng(40.607411, 140.468269),
+            position: new google.maps.LatLng(39.757833, 140.056333),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_14 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/aomori.html" target="_blank">April 23, 2023 - Aomori</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230423_221045143.jpg" target="_blank">04/24/2023 - PXL_20230423_221045143.jpg</a>'
         });
         
         info_marker_14.addListener('click', function() {
@@ -248,14 +242,14 @@
         });
 
         var info_marker_15 = new google.maps.Marker({
-            position: new google.maps.LatLng(39.757833, 140.056333),
+            position: new google.maps.LatLng(39.713928, 140.634286),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_15 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/akita.html" target="_blank">April 24, 2023 - Akita</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230424_034637510.jpg" target="_blank">04/24/2023 - PXL_20230424_034637510.jpg</a>'
         });
         
         info_marker_15.addListener('click', function() {
@@ -263,14 +257,14 @@
         });
 
         var info_marker_16 = new google.maps.Marker({
-            position: new google.maps.LatLng(39.713928, 140.634286),
+            position: new google.maps.LatLng(39.597986, 140.558300),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_16 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/akita.html" target="_blank">April 24, 2023 - Akita</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230424_045011816.jpg" target="_blank">04/24/2023 - PXL_20230424_045011816.jpg</a>'
         });
         
         info_marker_16.addListener('click', function() {
@@ -278,14 +272,14 @@
         });
 
         var info_marker_17 = new google.maps.Marker({
-            position: new google.maps.LatLng(39.597986, 140.558300),
+            position: new google.maps.LatLng(35.157253, 129.081925),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_17 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/akita.html" target="_blank">April 24, 2023 - Akita</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230425_232158805.jpg" target="_blank">04/26/2023 - PXL_20230425_232158805.jpg</a>'
         });
         
         info_marker_17.addListener('click', function() {
@@ -293,14 +287,14 @@
         });
 
         var info_marker_18 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.110675, 129.050456),
+            position: new google.maps.LatLng(35.157981, 129.173067),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_18 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/busan.html" target="_blank">April 26, 2023 - Busan - Cruise Terminal</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230426_012904129.jpg" target="_blank">04/26/2023 - PXL_20230426_012904129.jpg</a>'
         });
         
         info_marker_18.addListener('click', function() {
@@ -308,14 +302,14 @@
         });
 
         var info_marker_19 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.157253, 129.081925),
+            position: new google.maps.LatLng(35.188983, 129.223122),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_19 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/busan.html" target="_blank">April 26, 2023 - Busan - Hwangnyeongsan Observatory</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230426_024630331.jpg" target="_blank">04/26/2023 - PXL_20230426_024630331.jpg</a>'
         });
         
         info_marker_19.addListener('click', function() {
@@ -323,14 +317,14 @@
         });
 
         var info_marker_20 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.152392, 129.150331),
+            position: new google.maps.LatLng(35.097658, 129.009983),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_20 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/busan.html" target="_blank">April 26, 2023 - Busan - Dongbaek Park</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230426_060823288.jpg" target="_blank">04/26/2023 - PXL_20230426_060823288.jpg</a>'
         });
         
         info_marker_20.addListener('click', function() {
@@ -338,14 +332,14 @@
         });
 
         var info_marker_21 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.150628, 129.116172),
+            position: new google.maps.LatLng(35.075444, 129.022456),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_21 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/busan.html" target="_blank">April 26, 2023 - Busan - Gwangalli Beach</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230426_063355705.jpg" target="_blank">04/26/2023 - PXL_20230426_063355705.jpg</a>'
         });
         
         info_marker_21.addListener('click', function() {
@@ -353,14 +347,14 @@
         });
 
         var info_marker_22 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.157989, 129.173078),
+            position: new google.maps.LatLng(35.062556, 129.020642),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_22 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/busan.html" target="_blank">April 26, 2023 - Busan - Haeunde Blueline Park</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230426_071520757.jpg" target="_blank">04/26/2023 - PXL_20230426_071520757.jpg</a>'
         });
         
         info_marker_22.addListener('click', function() {
@@ -368,62 +362,59 @@
         });
 
         var info_marker_23 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.189072, 129.222256),
+            position: new google.maps.LatLng(35.096625, 129.030222),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_23 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/busan.html" target="_blank">April 26, 2023 - Busan - Haedong Yonggungsa Temple</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230426_073642826.jpg" target="_blank">04/26/2023 - PXL_20230426_073642826.jpg</a>'
         });
         
         info_marker_23.addListener('click', function() {
             info_window_23.open(map, info_marker_23);
         });
 
-        /* Remove Duplicate Marker
         var info_marker_24 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.188983, 129.223122),
+            position: new google.maps.LatLng(32.776603, 129.863889),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_24 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-04-26/PXL_20230426_024630331.jpg" target="_blank">- /2023-04_japan/2023-04-26/PXL_20230426_024630331.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230427_012835559.jpg" target="_blank">04/27/2023 - PXL_20230427_012835559.jpg</a>'
         });
         
         info_marker_24.addListener('click', function() {
             info_window_24.open(map, info_marker_24);
         });
-        
 
         var info_marker_25 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.089983, 129.020814),
+            position: new google.maps.LatLng(32.767467, 129.867706),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_25 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-04-26/PXL_20230426_052750253.PANO.jpg" target="_blank">- /2023-04_japan/2023-04-26/PXL_20230426_052750253.PANO.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230427_030709188.jpg" target="_blank">04/27/2023 - PXL_20230427_030709188.jpg</a>'
         });
         
         info_marker_25.addListener('click', function() {
             info_window_25.open(map, info_marker_25);
         });
-        */
 
         var info_marker_26 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.075444, 129.022456),
+            position: new google.maps.LatLng(35.508356, 139.618203),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_26 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/busan.html" target="_blank">April 26, 2023 - Busan - Songdo Cloud Trails</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230429_005900881.jpg" target="_blank">04/29/2023 - PXL_20230429_005900881.jpg</a>'
         });
         
         info_marker_26.addListener('click', function() {
@@ -431,14 +422,14 @@
         });
 
         var info_marker_27 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.097658, 129.009983),
+            position: new google.maps.LatLng(34.706717, 135.196356),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_27 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/busan.html" target="_blank">April 26, 2023 - Busan - Gamcheon Culture Village</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230429_052859759.jpg" target="_blank">04/29/2023 - PXL_20230429_052859759.jpg</a>'
         });
         
         info_marker_27.addListener('click', function() {
@@ -446,14 +437,14 @@
         });
 
         var info_marker_28 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.062556, 129.020642),
+            position: new google.maps.LatLng(34.295836, 132.318806),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_28 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/busan.html" target="_blank">April 26, 2023 - Busan - Songdo Sky Park</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230429_233656972.jpg" target="_blank">04/30/2023 - PXL_20230429_233656972.jpg</a>'
         });
         
         info_marker_28.addListener('click', function() {
@@ -461,14 +452,14 @@
         });
 
         var info_marker_29 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.096625, 129.030222),
+            position: new google.maps.LatLng(34.395067, 132.453661),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_29 = new google.maps.InfoWindow({
-            content: '<a href="https://www.garrettblog.com/2023/04/busan.html" target="_blank">April 26, 2023 - Busan - Market</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230430_014541088.jpg" target="_blank">04/30/2023 - PXL_20230430_014541088.jpg</a>'
         });
         
         info_marker_29.addListener('click', function() {
@@ -476,46 +467,44 @@
         });
 
         var info_marker_30 = new google.maps.Marker({
-            position: new google.maps.LatLng(32.774489, 129.862236),
+            position: new google.maps.LatLng(34.392019, 132.452003),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_30 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-04-27/PXL_20230427_014627010.jpg" target="_blank">- /2023-04_japan/2023-04-27/PXL_20230427_014627010.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230430_032434687.jpg" target="_blank">04/30/2023 - PXL_20230430_032434687.jpg</a>'
         });
         
         info_marker_30.addListener('click', function() {
             info_window_30.open(map, info_marker_30);
         });
 
-        /*
         var info_marker_31 = new google.maps.Marker({
-            position: new google.maps.LatLng(32.776603, 129.863889),
+            position: new google.maps.LatLng(34.399886, 132.458525),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_31 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-04-27/PXL_20230427_012835559.jpg" target="_blank">- /2023-04_japan/2023-04-27/PXL_20230427_012835559.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230430_092551190.jpg" target="_blank">04/30/2023 - PXL_20230430_092551190.jpg</a>'
         });
         
         info_marker_31.addListener('click', function() {
             info_window_31.open(map, info_marker_31);
         });
-        */ 
 
         var info_marker_32 = new google.maps.Marker({
-            position: new google.maps.LatLng(32.767467, 129.867706),
+            position: new google.maps.LatLng(34.985869, 135.757158),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_32 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-04-27/PXL_20230427_030709188.jpg" target="_blank">- /2023-04_japan/2023-04-27/PXL_20230427_030709188.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230501_033214881.jpg" target="_blank">05/01/2023 - PXL_20230501_033214881.jpg</a>'
         });
         
         info_marker_32.addListener('click', function() {
@@ -523,14 +512,14 @@
         });
 
         var info_marker_33 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.457133, 139.649056),
+            position: new google.maps.LatLng(34.987733, 135.759350),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_33 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-04-29/PXL_20230428_204559845.PANO.jpg" target="_blank">- /2023-04_japan/2023-04-29/PXL_20230428_204559845.PANO.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230501_043424888.jpg" target="_blank">05/01/2023 - PXL_20230501_043424888.jpg</a>'
         });
         
         info_marker_33.addListener('click', function() {
@@ -538,14 +527,14 @@
         });
 
         var info_marker_34 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.706717, 135.196356),
+            position: new google.maps.LatLng(35.005553, 135.774500),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_34 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-04-29/PXL_20230429_052859759.jpg" target="_blank">- /2023-04_japan/2023-04-29/PXL_20230429_052859759.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230501_105029086.NIGHT.jpg" target="_blank">05/01/2023 - PXL_20230501_105029086.NIGHT.jpg</a>'
         });
         
         info_marker_34.addListener('click', function() {
@@ -553,14 +542,14 @@
         });
 
         var info_marker_35 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.297125, 132.318994),
+            position: new google.maps.LatLng(34.995483, 135.783153),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_35 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-04-30/PXL_20230429_224329668.jpg" target="_blank">- /2023-04_japan/2023-04-30/PXL_20230429_224329668.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230501_223845174.jpg" target="_blank">05/02/2023 - PXL_20230501_223845174.jpg</a>'
         });
         
         info_marker_35.addListener('click', function() {
@@ -568,14 +557,14 @@
         });
 
         var info_marker_36 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.395067, 132.453661),
+            position: new google.maps.LatLng(35.039369, 135.728808),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_36 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-04-30/PXL_20230430_014541088.jpg" target="_blank">- /2023-04_japan/2023-04-30/PXL_20230430_014541088.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230502_030322710.jpg" target="_blank">05/02/2023 - PXL_20230502_030322710.jpg</a>'
         });
         
         info_marker_36.addListener('click', function() {
@@ -583,14 +572,14 @@
         });
 
         var info_marker_37 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.392019, 132.452003),
+            position: new google.maps.LatLng(34.966978, 135.774733),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_37 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-04-30/PXL_20230430_032434687.jpg" target="_blank">- /2023-04_japan/2023-04-30/PXL_20230430_032434687.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230502_230905408.jpg" target="_blank">05/03/2023 - PXL_20230502_230905408.jpg</a>'
         });
         
         info_marker_37.addListener('click', function() {
@@ -598,14 +587,14 @@
         });
 
         var info_marker_38 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.399447, 132.459411),
+            position: new google.maps.LatLng(34.682781, 135.834514),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_38 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-04-30/PXL_20230430_084524175.jpg" target="_blank">- /2023-04_japan/2023-04-30/PXL_20230430_084524175.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230503_022346720.jpg" target="_blank">05/03/2023 - PXL_20230503_022346720.jpg</a>'
         });
         
         info_marker_38.addListener('click', function() {
@@ -613,14 +602,14 @@
         });
 
         var info_marker_39 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.985869, 135.757158),
+            position: new google.maps.LatLng(35.023533, 135.761714),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_39 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-01/PXL_20230501_033211089.jpg" target="_blank">- /2023-04_japan/2023-05-01/PXL_20230501_033211089.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230503_070944760.jpg" target="_blank">05/03/2023 - PXL_20230503_070944760.jpg</a>'
         });
         
         info_marker_39.addListener('click', function() {
@@ -628,14 +617,14 @@
         });
 
         var info_marker_40 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.987733, 135.759350),
+            position: new google.maps.LatLng(34.888922, 135.808131),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_40 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-01/PXL_20230501_043424888.jpg" target="_blank">- /2023-04_japan/2023-05-01/PXL_20230501_043424888.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230504_012520824.jpg" target="_blank">05/04/2023 - PXL_20230504_012520824.jpg</a>'
         });
         
         info_marker_40.addListener('click', function() {
@@ -643,14 +632,14 @@
         });
 
         var info_marker_41 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.003781, 135.777256),
+            position: new google.maps.LatLng(34.686269, 135.526517),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_41 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-01/PXL_20230501_101835112.NIGHT.jpg" target="_blank">- /2023-04_japan/2023-05-01/PXL_20230501_101835112.NIGHT.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230504_044327877.jpg" target="_blank">05/04/2023 - PXL_20230504_044327877.jpg</a>'
         });
         
         info_marker_41.addListener('click', function() {
@@ -658,14 +647,14 @@
         });
 
         var info_marker_42 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.994536, 135.785461),
+            position: new google.maps.LatLng(34.654856, 135.429358),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_42 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-02/PXL_20230501_230942398.jpg" target="_blank">- /2023-04_japan/2023-05-02/PXL_20230501_230942398.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230505_043658490.jpg" target="_blank">05/05/2023 - PXL_20230505_043658490.jpg</a>'
         });
         
         info_marker_42.addListener('click', function() {
@@ -673,14 +662,14 @@
         });
 
         var info_marker_43 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.000450, 135.773958),
+            position: new google.maps.LatLng(34.705331, 135.490378),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_43 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-02/PXL_20230502_002032743.jpg" target="_blank">- /2023-04_japan/2023-05-02/PXL_20230502_002032743.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230505_100040053.jpg" target="_blank">05/05/2023 - PXL_20230505_100040053.jpg</a>'
         });
         
         info_marker_43.addListener('click', function() {
@@ -688,14 +677,14 @@
         });
 
         var info_marker_44 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.039369, 135.728808),
+            position: new google.maps.LatLng(35.452128, 139.642078),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_44 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-02/PXL_20230502_030322710.jpg" target="_blank">- /2023-04_japan/2023-05-02/PXL_20230502_030322710.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230506_034927520.jpg" target="_blank">05/06/2023 - PXL_20230506_034927520.jpg</a>'
         });
         
         info_marker_44.addListener('click', function() {
@@ -703,14 +692,14 @@
         });
 
         var info_marker_45 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.967211, 135.773989),
+            position: new google.maps.LatLng(35.443108, 139.644342),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_45 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-03/PXL_20230502_230737832.jpg" target="_blank">- /2023-04_japan/2023-05-03/PXL_20230502_230737832.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230506_061213134.jpg" target="_blank">05/06/2023 - PXL_20230506_061213134.jpg</a>'
         });
         
         info_marker_45.addListener('click', function() {
@@ -718,14 +707,14 @@
         });
 
         var info_marker_46 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.682781, 135.834514),
+            position: new google.maps.LatLng(35.457547, 139.637008),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_46 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-03/PXL_20230503_022346720.jpg" target="_blank">- /2023-04_japan/2023-05-03/PXL_20230503_022346720.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230506_204142447.jpg" target="_blank">05/07/2023 - PXL_20230506_204142447.jpg</a>'
         });
         
         info_marker_46.addListener('click', function() {
@@ -733,14 +722,14 @@
         });
 
         var info_marker_47 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.023533, 135.761714),
+            position: new google.maps.LatLng(32.741708, 129.883206),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_47 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-03/PXL_20230503_070944760.jpg" target="_blank">- /2023-04_japan/2023-05-03/PXL_20230503_070944760.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230509_012056490.jpg" target="_blank">05/09/2023 - PXL_20230509_012056490.jpg</a>'
         });
         
         info_marker_47.addListener('click', function() {
@@ -748,14 +737,14 @@
         });
 
         var info_marker_48 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.889744, 135.807611),
+            position: new google.maps.LatLng(32.746867, 129.879392),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_48 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-04/PXL_20230504_010651616.jpg" target="_blank">- /2023-04_japan/2023-05-04/PXL_20230504_010651616.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230509_020020991.jpg" target="_blank">05/09/2023 - PXL_20230509_020020991.jpg</a>'
         });
         
         info_marker_48.addListener('click', function() {
@@ -763,14 +752,14 @@
         });
 
         var info_marker_49 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.688114, 135.525464),
+            position: new google.maps.LatLng(32.757578, 129.858706),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_49 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-04/PXL_20230504_043017377.jpg" target="_blank">- /2023-04_japan/2023-05-04/PXL_20230504_043017377.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230509_031201220.jpg" target="_blank">05/09/2023 - PXL_20230509_031201220.jpg</a>'
         });
         
         info_marker_49.addListener('click', function() {
@@ -778,14 +767,14 @@
         });
 
         var info_marker_50 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.654847, 135.428664),
+            position: new google.maps.LatLng(33.245922, 126.449475),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_50 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-05/PXL_20230505_041226207.jpg" target="_blank">- /2023-04_japan/2023-05-05/PXL_20230505_041226207.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230509_233329909.jpg" target="_blank">05/10/2023 - PXL_20230509_233329909.jpg</a>'
         });
         
         info_marker_50.addListener('click', function() {
@@ -793,14 +782,14 @@
         });
 
         var info_marker_51 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.705331, 135.490378),
+            position: new google.maps.LatLng(33.252747, 126.417164),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_51 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-05/PXL_20230505_100040053.jpg" target="_blank">- /2023-04_japan/2023-05-05/PXL_20230505_100040053.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230510_004743706.jpg" target="_blank">05/10/2023 - PXL_20230510_004743706.jpg</a>'
         });
         
         info_marker_51.addListener('click', function() {
@@ -808,14 +797,14 @@
         });
 
         var info_marker_52 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.452492, 139.642639),
+            position: new google.maps.LatLng(33.252219, 126.414419),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_52 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-06/PXL_20230506_033343652.jpg" target="_blank">- /2023-04_japan/2023-05-06/PXL_20230506_033343652.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230510_012709736.jpg" target="_blank">05/10/2023 - PXL_20230510_012709736.jpg</a>'
         });
         
         info_marker_52.addListener('click', function() {
@@ -823,14 +812,14 @@
         });
 
         var info_marker_53 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.443108, 139.644342),
+            position: new google.maps.LatLng(33.240133, 126.544539),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_53 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-06/PXL_20230506_061213134.jpg" target="_blank">- /2023-04_japan/2023-05-06/PXL_20230506_061213134.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230510_041927307.jpg" target="_blank">05/10/2023 - PXL_20230510_041927307.jpg</a>'
         });
         
         info_marker_53.addListener('click', function() {
@@ -838,14 +827,14 @@
         });
 
         var info_marker_54 = new google.maps.Marker({
-            position: new google.maps.LatLng(35.451883, 139.648450),
+            position: new google.maps.LatLng(31.247086, 130.546331),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_54 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-07/PXL_20230507_081315252.jpg" target="_blank">- /2023-04_japan/2023-05-07/PXL_20230507_081315252.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230511_052818128.PANO.jpg" target="_blank">05/11/2023 - PXL_20230511_052818128.PANO.jpg</a>'
         });
         
         info_marker_54.addListener('click', function() {
@@ -853,14 +842,14 @@
         });
 
         var info_marker_55 = new google.maps.Marker({
-            position: new google.maps.LatLng(32.741708, 129.883206),
+            position: new google.maps.LatLng(31.247325, 130.545928),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_55 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-09/PXL_20230509_012056490.jpg" target="_blank">- /2023-04_japan/2023-05-09/PXL_20230509_012056490.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230511_054219716.jpg" target="_blank">05/11/2023 - PXL_20230511_054219716.jpg</a>'
         });
         
         info_marker_55.addListener('click', function() {
@@ -868,14 +857,14 @@
         });
 
         var info_marker_56 = new google.maps.Marker({
-            position: new google.maps.LatLng(32.746867, 129.879392),
+            position: new google.maps.LatLng(31.379436, 130.448342),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_56 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-09/PXL_20230509_020020991.jpg" target="_blank">- /2023-04_japan/2023-05-09/PXL_20230509_020020991.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230511_071442191.jpg" target="_blank">05/11/2023 - PXL_20230511_071442191.jpg</a>'
         });
         
         info_marker_56.addListener('click', function() {
@@ -883,14 +872,14 @@
         });
 
         var info_marker_57 = new google.maps.Marker({
-            position: new google.maps.LatLng(32.757578, 129.858706),
+            position: new google.maps.LatLng(34.693856, 135.191014),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_57 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-09/PXL_20230509_030404465.jpg" target="_blank">- /2023-04_japan/2023-05-09/PXL_20230509_030404465.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230513_001645007.jpg" target="_blank">05/13/2023 - PXL_20230513_001645007.jpg</a>'
         });
         
         info_marker_57.addListener('click', function() {
@@ -898,14 +887,14 @@
         });
 
         var info_marker_58 = new google.maps.Marker({
-            position: new google.maps.LatLng(32.734661, 129.870128),
+            position: new google.maps.LatLng(34.688317, 135.189556),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_58 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-09/PXL_20230509_060719331.jpg" target="_blank">- /2023-04_japan/2023-05-09/PXL_20230509_060719331.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230513_010838071.jpg" target="_blank">05/13/2023 - PXL_20230513_010838071.jpg</a>'
         });
         
         info_marker_58.addListener('click', function() {
@@ -913,14 +902,14 @@
         });
 
         var info_marker_59 = new google.maps.Marker({
-            position: new google.maps.LatLng(32.736450, 129.867531),
+            position: new google.maps.LatLng(34.681467, 135.189483),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_59 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-09/PXL_20230509_085332840.jpg" target="_blank">- /2023-04_japan/2023-05-09/PXL_20230509_085332840.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230513_013453233.jpg" target="_blank">05/13/2023 - PXL_20230513_013453233.jpg</a>'
         });
         
         info_marker_59.addListener('click', function() {
@@ -928,14 +917,14 @@
         });
 
         var info_marker_60 = new google.maps.Marker({
-            position: new google.maps.LatLng(33.244997, 126.449597),
+            position: new google.maps.LatLng(34.714233, 135.191342),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_60 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-10/PXL_20230509_232705094.jpg" target="_blank">- /2023-04_japan/2023-05-10/PXL_20230509_232705094.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230513_030857258.jpg" target="_blank">05/13/2023 - PXL_20230513_030857258.jpg</a>'
         });
         
         info_marker_60.addListener('click', function() {
@@ -943,14 +932,14 @@
         });
 
         var info_marker_61 = new google.maps.Marker({
-            position: new google.maps.LatLng(33.250664, 126.414833),
+            position: new google.maps.LatLng(34.688381, 135.189256),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_61 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-10/PXL_20230510_002234764.jpg" target="_blank">- /2023-04_japan/2023-05-10/PXL_20230510_002234764.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230513_043637437.jpg" target="_blank">05/13/2023 - PXL_20230513_043637437.jpg</a>'
         });
         
         info_marker_61.addListener('click', function() {
@@ -958,14 +947,14 @@
         });
 
         var info_marker_62 = new google.maps.Marker({
-            position: new google.maps.LatLng(33.252747, 126.417164),
+            position: new google.maps.LatLng(34.680333, 135.203056),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_62 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-10/PXL_20230510_004743706.jpg" target="_blank">- /2023-04_japan/2023-05-10/PXL_20230510_004743706.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230513_075802328.jpg" target="_blank">05/13/2023 - PXL_20230513_075802328.jpg</a>'
         });
         
         info_marker_62.addListener('click', function() {
@@ -973,14 +962,14 @@
         });
 
         var info_marker_63 = new google.maps.Marker({
-            position: new google.maps.LatLng(33.252294, 126.414647),
+            position: new google.maps.LatLng(26.330883, 127.878619),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_63 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-10/PXL_20230510_012509359.jpg" target="_blank">- /2023-04_japan/2023-05-10/PXL_20230510_012509359.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230515_003534466.jpg" target="_blank">05/15/2023 - PXL_20230515_003534466.jpg</a>'
         });
         
         info_marker_63.addListener('click', function() {
@@ -988,14 +977,14 @@
         });
 
         var info_marker_64 = new google.maps.Marker({
-            position: new google.maps.LatLng(33.239697, 126.545603),
+            position: new google.maps.LatLng(26.360442, 127.992106),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_64 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-10/PXL_20230510_041441293.jpg" target="_blank">- /2023-04_japan/2023-05-10/PXL_20230510_041441293.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230515_021638022.jpg" target="_blank">05/15/2023 - PXL_20230515_021638022.jpg</a>'
         });
         
         info_marker_64.addListener('click', function() {
@@ -1003,14 +992,14 @@
         });
 
         var info_marker_65 = new google.maps.Marker({
-            position: new google.maps.LatLng(31.247325, 130.545928),
+            position: new google.maps.LatLng(26.377533, 127.805761),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_65 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-11/PXL_20230511_054219716.jpg" target="_blank">- /2023-04_japan/2023-05-11/PXL_20230511_054219716.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230515_033916045.jpg" target="_blank">05/15/2023 - PXL_20230515_033916045.jpg</a>'
         });
         
         info_marker_65.addListener('click', function() {
@@ -1018,14 +1007,14 @@
         });
 
         var info_marker_66 = new google.maps.Marker({
-            position: new google.maps.LatLng(31.378714, 130.445278),
+            position: new google.maps.LatLng(24.490561, 124.278717),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_66 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-11/PXL_20230511_065750622.jpg" target="_blank">- /2023-04_japan/2023-05-11/PXL_20230511_065750622.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230516_012419273.jpg" target="_blank">05/16/2023 - PXL_20230516_012419273.jpg</a>'
         });
         
         info_marker_66.addListener('click', function() {
@@ -1033,14 +1022,14 @@
         });
 
         var info_marker_67 = new google.maps.Marker({
-            position: new google.maps.LatLng(31.535836, 130.555481),
+            position: new google.maps.LatLng(24.452603, 124.184783),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_67 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-11/PXL_20230511_083701828.jpg" target="_blank">- /2023-04_japan/2023-05-11/PXL_20230511_083701828.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230516_023023345.jpg" target="_blank">05/16/2023 - PXL_20230516_023023345.jpg</a>'
         });
         
         info_marker_67.addListener('click', function() {
@@ -1048,14 +1037,14 @@
         });
 
         var info_marker_68 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.680442, 135.203331),
+            position: new google.maps.LatLng(24.453283, 124.187075),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_68 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-13/PXL_20230512_224611489.jpg" target="_blank">- /2023-04_japan/2023-05-13/PXL_20230512_224611489.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230516_023954322.jpg" target="_blank">05/16/2023 - PXL_20230516_023954322.jpg</a>'
         });
         
         info_marker_68.addListener('click', function() {
@@ -1063,14 +1052,14 @@
         });
 
         var info_marker_69 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.693969, 135.190978),
+            position: new google.maps.LatLng(24.460572, 124.142747),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_69 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-13/PXL_20230513_001718954.jpg" target="_blank">- /2023-04_japan/2023-05-13/PXL_20230513_001718954.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230516_032236822.jpg" target="_blank">05/16/2023 - PXL_20230516_032236822.jpg</a>'
         });
         
         info_marker_69.addListener('click', function() {
@@ -1078,14 +1067,14 @@
         });
 
         var info_marker_70 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.688317, 135.189556),
+            position: new google.maps.LatLng(24.372806, 124.162389),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_70 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-13/PXL_20230513_010838071.jpg" target="_blank">- /2023-04_japan/2023-05-13/PXL_20230513_010838071.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230516_055504003.jpg" target="_blank">05/16/2023 - PXL_20230516_055504003.jpg</a>'
         });
         
         info_marker_70.addListener('click', function() {
@@ -1093,14 +1082,14 @@
         });
 
         var info_marker_71 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.712311, 135.191558),
+            position: new google.maps.LatLng(25.135622, 121.742142),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_71 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-13/PXL_20230513_030708608.jpg" target="_blank">- /2023-04_japan/2023-05-13/PXL_20230513_030708608.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230516_223223584.jpg" target="_blank">05/17/2023 - PXL_20230516_223223584.jpg</a>'
         });
         
         info_marker_71.addListener('click', function() {
@@ -1108,14 +1097,14 @@
         });
 
         var info_marker_72 = new google.maps.Marker({
-            position: new google.maps.LatLng(34.688392, 135.189258),
+            position: new google.maps.LatLng(25.101881, 121.548961),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_72 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-13/PXL_20230513_043425696.jpg" target="_blank">- /2023-04_japan/2023-05-13/PXL_20230513_043425696.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230517_004935485.jpg" target="_blank">05/17/2023 - PXL_20230517_004935485.jpg</a>'
         });
         
         info_marker_72.addListener('click', function() {
@@ -1123,14 +1112,14 @@
         });
 
         var info_marker_73 = new google.maps.Marker({
-            position: new google.maps.LatLng(26.330883, 127.878619),
+            position: new google.maps.LatLng(25.080250, 121.532806),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_73 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-15/PXL_20230515_003534466.jpg" target="_blank">- /2023-04_japan/2023-05-15/PXL_20230515_003534466.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230517_030534060.jpg" target="_blank">05/17/2023 - PXL_20230517_030534060.jpg</a>'
         });
         
         info_marker_73.addListener('click', function() {
@@ -1138,14 +1127,14 @@
         });
 
         var info_marker_74 = new google.maps.Marker({
-            position: new google.maps.LatLng(26.360442, 127.992106),
+            position: new google.maps.LatLng(25.034750, 121.521647),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
         var info_window_74 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-15/PXL_20230515_021638022.jpg" target="_blank">- /2023-04_japan/2023-05-15/PXL_20230515_021638022.jpg</a>'
+            content: '<a href="https://www.garrettblog.com/#PXL_20230517_035251802.jpg" target="_blank">05/17/2023 - PXL_20230517_035251802.jpg</a>'
         });
         
         info_marker_74.addListener('click', function() {
@@ -1153,168 +1142,18 @@
         });
 
         var info_marker_75 = new google.maps.Marker({
-            position: new google.maps.LatLng(26.377533, 127.805761),
-            label: "I",
-            icon: marker_icon_FF0000,
-            map: map
-        });
-
-        var info_window_75 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-15/PXL_20230515_033916045.jpg" target="_blank">- /2023-04_japan/2023-05-15/PXL_20230515_033916045.jpg</a>'
-        });
-        
-        info_marker_75.addListener('click', function() {
-            info_window_75.open(map, info_marker_75);
-        });
-
-        var info_marker_76 = new google.maps.Marker({
-            position: new google.maps.LatLng(24.490586, 124.278886),
-            label: "I",
-            icon: marker_icon_FF0000,
-            map: map
-        });
-
-        var info_window_76 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-16/PXL_20230516_011831211.PANO.jpg" target="_blank">- /2023-04_japan/2023-05-16/PXL_20230516_011831211.PANO.jpg</a>'
-        });
-        
-        info_marker_76.addListener('click', function() {
-            info_window_76.open(map, info_marker_76);
-        });
-
-        var info_marker_77 = new google.maps.Marker({
-            position: new google.maps.LatLng(24.452528, 124.184800),
-            label: "I",
-            icon: marker_icon_FF0000,
-            map: map
-        });
-
-        var info_window_77 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-16/PXL_20230516_022934233.jpg" target="_blank">- /2023-04_japan/2023-05-16/PXL_20230516_022934233.jpg</a>'
-        });
-        
-        info_marker_77.addListener('click', function() {
-            info_window_77.open(map, info_marker_77);
-        });
-
-        var info_marker_78 = new google.maps.Marker({
-            position: new google.maps.LatLng(24.453283, 124.187075),
-            label: "I",
-            icon: marker_icon_FF0000,
-            map: map
-        });
-
-        var info_window_78 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-16/PXL_20230516_023954322.jpg" target="_blank">- /2023-04_japan/2023-05-16/PXL_20230516_023954322.jpg</a>'
-        });
-        
-        info_marker_78.addListener('click', function() {
-            info_window_78.open(map, info_marker_78);
-        });
-
-        var info_marker_79 = new google.maps.Marker({
-            position: new google.maps.LatLng(24.460572, 124.142747),
-            label: "I",
-            icon: marker_icon_FF0000,
-            map: map
-        });
-
-        var info_window_79 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-16/PXL_20230516_032236822.jpg" target="_blank">- /2023-04_japan/2023-05-16/PXL_20230516_032236822.jpg</a>'
-        });
-        
-        info_marker_79.addListener('click', function() {
-            info_window_79.open(map, info_marker_79);
-        });
-
-        var info_marker_80 = new google.maps.Marker({
-            position: new google.maps.LatLng(24.372783, 124.162317),
-            label: "I",
-            icon: marker_icon_FF0000,
-            map: map
-        });
-
-        var info_window_80 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-16/PXL_20230516_060626381.jpg" target="_blank">- /2023-04_japan/2023-05-16/PXL_20230516_060626381.jpg</a>'
-        });
-        
-        info_marker_80.addListener('click', function() {
-            info_window_80.open(map, info_marker_80);
-        });
-
-        var info_marker_81 = new google.maps.Marker({
-            position: new google.maps.LatLng(25.137344, 121.743647),
-            label: "I",
-            icon: marker_icon_FF0000,
-            map: map
-        });
-
-        var info_window_81 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-17/PXL_20230516_224244770.jpg" target="_blank">- /2023-04_japan/2023-05-17/PXL_20230516_224244770.jpg</a>'
-        });
-        
-        info_marker_81.addListener('click', function() {
-            info_window_81.open(map, info_marker_81);
-        });
-
-        var info_marker_82 = new google.maps.Marker({
-            position: new google.maps.LatLng(25.101881, 121.548961),
-            label: "I",
-            icon: marker_icon_FF0000,
-            map: map
-        });
-
-        var info_window_82 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-17/PXL_20230517_004935485.jpg" target="_blank">- /2023-04_japan/2023-05-17/PXL_20230517_004935485.jpg</a>'
-        });
-        
-        info_marker_82.addListener('click', function() {
-            info_window_82.open(map, info_marker_82);
-        });
-
-        var info_marker_83 = new google.maps.Marker({
-            position: new google.maps.LatLng(25.080214, 121.532756),
-            label: "I",
-            icon: marker_icon_FF0000,
-            map: map
-        });
-
-        var info_window_83 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-17/PXL_20230517_030305356.jpg" target="_blank">- /2023-04_japan/2023-05-17/PXL_20230517_030305356.jpg</a>'
-        });
-        
-        info_marker_83.addListener('click', function() {
-            info_window_83.open(map, info_marker_83);
-        });
-
-        var info_marker_84 = new google.maps.Marker({
-            position: new google.maps.LatLng(25.034764, 121.521403),
-            label: "I",
-            icon: marker_icon_FF0000,
-            map: map
-        });
-
-        var info_window_84 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-17/PXL_20230517_035525772.jpg" target="_blank">- /2023-04_japan/2023-05-17/PXL_20230517_035525772.jpg</a>'
-        });
-        
-        info_marker_84.addListener('click', function() {
-            info_window_84.open(map, info_marker_84);
-        });
-
-        var info_marker_85 = new google.maps.Marker({
             position: new google.maps.LatLng(25.038953, 121.562908),
             label: "I",
             icon: marker_icon_FF0000,
             map: map
         });
 
-        var info_window_85 = new google.maps.InfoWindow({
-            content: '<a href="file://D:/REVIEW/2023-04_japan/2023-05-17/PXL_20230517_044339519.jpg" target="_blank">- /2023-04_japan/2023-05-17/PXL_20230517_044339519.jpg</a>'
+        var info_window_75 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/#PXL_20230517_044339519.jpg" target="_blank">05/17/2023 - PXL_20230517_044339519.jpg</a>'
         });
         
-        info_marker_85.addListener('click', function() {
-            info_window_85.open(map, info_marker_85);
+        info_marker_75.addListener('click', function() {
+            info_window_75.open(map, info_marker_75);
         });
 
         new google.maps.visualization.HeatmapLayer({
@@ -1325,91 +1164,81 @@
             dissipating: true,
             map: map,
             data: [
-                new google.maps.LatLng(35.643422, 139.780772),
-                new google.maps.LatLng(35.713136, 139.770478),
+                new google.maps.LatLng(35.643436, 139.780800),
+                new google.maps.LatLng(35.710097, 139.769564),
                 new google.maps.LatLng(35.710942, 139.796319),
                 new google.maps.LatLng(35.694536, 139.702089),
                 new google.maps.LatLng(35.684206, 139.759092),
-
                 new google.maps.LatLng(35.451517, 139.646764),
-
-                new google.maps.LatLng(36.400600, 140.593644),
-
-                new google.maps.LatLng(36.406408, 140.600353),
+                new google.maps.LatLng(36.374839, 140.455708),
+                new google.maps.LatLng(36.404064, 140.599628),
                 new google.maps.LatLng(39.629214, 141.969658),
                 new google.maps.LatLng(39.649731, 141.980069),
-                new google.maps.LatLng(40.829558, 140.735539),
+                new google.maps.LatLng(40.832331, 140.745767),
+                new google.maps.LatLng(40.829550, 140.736142),
                 new google.maps.LatLng(40.607411, 140.468269),
+                new google.maps.LatLng(40.607681, 140.463761),
                 new google.maps.LatLng(39.757833, 140.056333),
                 new google.maps.LatLng(39.713928, 140.634286),
                 new google.maps.LatLng(39.597986, 140.558300),
-                new google.maps.LatLng(35.110675, 129.050456),
                 new google.maps.LatLng(35.157253, 129.081925),
-                new google.maps.LatLng(35.152392, 129.150331),
-                new google.maps.LatLng(35.150628, 129.116172),
-                new google.maps.LatLng(35.157989, 129.173078),
-                new google.maps.LatLng(35.189072, 129.222256),
-
-
-                new google.maps.LatLng(35.075444, 129.022456),
+                new google.maps.LatLng(35.157981, 129.173067),
+                new google.maps.LatLng(35.188983, 129.223122),
                 new google.maps.LatLng(35.097658, 129.009983),
+                new google.maps.LatLng(35.075444, 129.022456),
                 new google.maps.LatLng(35.062556, 129.020642),
                 new google.maps.LatLng(35.096625, 129.030222),
-                new google.maps.LatLng(32.774489, 129.862236),
-
+                new google.maps.LatLng(32.776603, 129.863889),
                 new google.maps.LatLng(32.767467, 129.867706),
-                new google.maps.LatLng(35.457133, 139.649056),
+                new google.maps.LatLng(35.508356, 139.618203),
                 new google.maps.LatLng(34.706717, 135.196356),
-                new google.maps.LatLng(34.297125, 132.318994),
+                new google.maps.LatLng(34.295836, 132.318806),
                 new google.maps.LatLng(34.395067, 132.453661),
                 new google.maps.LatLng(34.392019, 132.452003),
-                new google.maps.LatLng(34.399447, 132.459411),
+                new google.maps.LatLng(34.399886, 132.458525),
                 new google.maps.LatLng(34.985869, 135.757158),
                 new google.maps.LatLng(34.987733, 135.759350),
-                new google.maps.LatLng(35.003781, 135.777256),
-                new google.maps.LatLng(34.994536, 135.785461),
-                new google.maps.LatLng(35.000450, 135.773958),
+                new google.maps.LatLng(35.005553, 135.774500),
+                new google.maps.LatLng(34.995483, 135.783153),
                 new google.maps.LatLng(35.039369, 135.728808),
-                new google.maps.LatLng(34.967211, 135.773989),
+                new google.maps.LatLng(34.966978, 135.774733),
                 new google.maps.LatLng(34.682781, 135.834514),
                 new google.maps.LatLng(35.023533, 135.761714),
-                new google.maps.LatLng(34.889744, 135.807611),
-                new google.maps.LatLng(34.688114, 135.525464),
-                new google.maps.LatLng(34.654847, 135.428664),
+                new google.maps.LatLng(34.888922, 135.808131),
+                new google.maps.LatLng(34.686269, 135.526517),
+                new google.maps.LatLng(34.654856, 135.429358),
                 new google.maps.LatLng(34.705331, 135.490378),
-                new google.maps.LatLng(35.452492, 139.642639),
+                new google.maps.LatLng(35.452128, 139.642078),
                 new google.maps.LatLng(35.443108, 139.644342),
-                new google.maps.LatLng(35.451883, 139.648450),
+                new google.maps.LatLng(35.457547, 139.637008),
                 new google.maps.LatLng(32.741708, 129.883206),
                 new google.maps.LatLng(32.746867, 129.879392),
                 new google.maps.LatLng(32.757578, 129.858706),
-                new google.maps.LatLng(32.734661, 129.870128),
-                new google.maps.LatLng(32.736450, 129.867531),
-                new google.maps.LatLng(33.244997, 126.449597),
-                new google.maps.LatLng(33.250664, 126.414833),
+                new google.maps.LatLng(33.245922, 126.449475),
                 new google.maps.LatLng(33.252747, 126.417164),
-                new google.maps.LatLng(33.252294, 126.414647),
-                new google.maps.LatLng(33.239697, 126.545603),
+                new google.maps.LatLng(33.252219, 126.414419),
+                new google.maps.LatLng(33.240133, 126.544539),
+                new google.maps.LatLng(31.247086, 130.546331),
                 new google.maps.LatLng(31.247325, 130.545928),
-                new google.maps.LatLng(31.378714, 130.445278),
-                new google.maps.LatLng(31.535836, 130.555481),
-                new google.maps.LatLng(34.680442, 135.203331),
-                new google.maps.LatLng(34.693969, 135.190978),
+                new google.maps.LatLng(31.379436, 130.448342),
+                new google.maps.LatLng(34.693856, 135.191014),
                 new google.maps.LatLng(34.688317, 135.189556),
-                new google.maps.LatLng(34.712311, 135.191558),
-                new google.maps.LatLng(34.688392, 135.189258),
+                new google.maps.LatLng(34.681467, 135.189483),
+                new google.maps.LatLng(34.714233, 135.191342),
+                new google.maps.LatLng(34.688381, 135.189256),
+                new google.maps.LatLng(34.680333, 135.203056),
                 new google.maps.LatLng(26.330883, 127.878619),
                 new google.maps.LatLng(26.360442, 127.992106),
                 new google.maps.LatLng(26.377533, 127.805761),
-                new google.maps.LatLng(24.490586, 124.278886),
-                new google.maps.LatLng(24.452528, 124.184800),
+                new google.maps.LatLng(24.490561, 124.278717),
+                new google.maps.LatLng(24.452603, 124.184783),
                 new google.maps.LatLng(24.453283, 124.187075),
                 new google.maps.LatLng(24.460572, 124.142747),
-                new google.maps.LatLng(24.372783, 124.162317),
-                new google.maps.LatLng(25.137344, 121.743647),
+                new google.maps.LatLng(24.372806, 124.162389),
+                new google.maps.LatLng(25.135622, 121.742142),
                 new google.maps.LatLng(25.101881, 121.548961),
-                new google.maps.LatLng(25.080214, 121.532756),
-                new google.maps.LatLng(25.034764, 121.521403),
+                new google.maps.LatLng(25.080250, 121.532806),
+                new google.maps.LatLng(25.034750, 121.521647),
                 new google.maps.LatLng(25.038953, 121.562908),
             ]
         });
