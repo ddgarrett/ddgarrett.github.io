@@ -1,0 +1,388 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Google Maps - gmplot</title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&key=AIzaSyAAmtAIf4UsOHP_czPJV4Sb2vSDPaFPfOM"></script>
+<script type="text/javascript">
+    function initialize() {
+        var map = new google.maps.Map(document.getElementById("map_canvas"), {
+            zoom: 6,
+            center: new google.maps.LatLng(38.600078, 132.546470)
+        });
+
+        var marker_icon_FF0000 = {
+            url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAiCAYAAACwaJKDAAAABmJLR0QA/wD/AP+gvaeTAAACBklEQVRIia3VzUtUURgH4GdG/AiyZZShtWgXUbSIFtGqRYtqWRLhXyBYf0K6MaJQ2gRtayHtijYpleHKSCgIcRHoIiOSKEzLKea0OOeqTfPlzPzg5Qwz9zz3nXPvPTeneo7gNA4gjyI+Ygbva8z9L2cxi9BHOE+4msY+gliz6biayWE0R7GfMEcoEkJJzRH6CbnY+WiaVxEc6yY8KQOVq8eE7tj1WCV4qIswUyeY1QyhK8JDpWAP1m7vEMzqTkTXkrOZkYOEQoNogXAowiPE2wQuDqC9nktZJu0YSE72XRs2phrsMqup2OkG2vLpRB19DXaZJc3vQHv294Um0e3z8yigsNQkmuYXUMie5/npJtE0fz55YLiXsNHELdUbV2B4+4n2Y/Vmg+itCK4m558MdhBe7hCcJnRGdLDS0ox3E17XCb4h7IngeLX1zuFhD2G5BriytY4Tqmx9WXbh3Tnl99KsLkdwAbtrgVmO4/eDCuCkzd3/TL1glru9hF8lYJFwMoKPdgrCXqzfL0GfR7CIo42gcO9YCXopolONgnAC4W0Cv9l8dVxpBoWFGwmdiOC6Glc8X+3HlKeT6cOzOLzAjyaaBBc602ZzOHZ6vVkQ9kl7Qi6ip1qBwpdrEfwjPnFVU8+awuKrOC7hZ6vQlQ9baM3Ui379HsfVVqKf07jcSvRTGhfrOfgvIP3ECS77BDoAAAAASUVORK5CYII=",
+            labelOrigin: new google.maps.Point(10, 11)
+        };
+
+        var info_marker_0 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.569083, 126.978333),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_0 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241114_001107746.jpg" target="_blank">11/14/2024 - Seoul City Mascot - Haechi</a>'
+        });
+        
+        info_marker_0.addListener('click', function() {
+            info_window_0.open(map, info_marker_0);
+        });
+
+        var info_marker_1 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.576344, 126.976978),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_1 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241114_011948160.jpg" target="_blank">11/14/2024 - Gyeongbokgung Palace</a>'
+        });
+        
+        info_marker_1.addListener('click', function() {
+            info_window_1.open(map, info_marker_1);
+        });
+
+        var info_marker_2 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.582150, 126.983719),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_2 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241114_025210579.jpg" target="_blank">11/14/2024 - Bukchon Yukgyeong in Bukchon Hanok Village</a>'
+        });
+        
+        info_marker_2.addListener('click', function() {
+            info_window_2.open(map, info_marker_2);
+        });
+
+        var info_marker_3 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.573878, 126.982106),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_3 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241114_044541295.jpg" target="_blank">11/14/2024 - Jogye Temple</a>'
+        });
+        
+        info_marker_3.addListener('click', function() {
+            info_window_3.open(map, info_marker_3);
+        });
+
+        var info_marker_4 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.890247, 126.738661),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_4 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241114_232522479.jpg" target="_blank">11/15/2024 - Last Train Out - Imjingak Park - DMZ</a>'
+        });
+        
+        info_marker_4.addListener('click', function() {
+            info_window_4.open(map, info_marker_4);
+        });
+
+        var info_marker_5 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.789511, 129.332075),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_5 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241116_003416446.jpg" target="_blank">11/16/2024 - Bulguksa Buddhist Temple</a>'
+        });
+        
+        info_marker_5.addListener('click', function() {
+            info_window_5.open(map, info_marker_5);
+        });
+
+        var info_marker_6 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.839997, 129.211842),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_6 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241116_064351712.jpg" target="_blank">11/16/2024 - Hwangnamdaechong Tomb</a>'
+        });
+        
+        info_marker_6.addListener('click', function() {
+            info_window_6.open(map, info_marker_6);
+        });
+
+        var info_marker_7 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.835692, 129.219567),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_7 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241116_080153087.jpg" target="_blank">11/16/2024 - Sunset Cheomseongdae Pink Muhly</a>'
+        });
+        
+        info_marker_7.addListener('click', function() {
+            info_window_7.open(map, info_marker_7);
+        });
+
+        var info_marker_8 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.835028, 129.226525),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_8 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241116_084936747.jpg" target="_blank">11/16/2024 - Donggung Palace & Wolji Pond</a>'
+        });
+        
+        info_marker_8.addListener('click', function() {
+            info_window_8.open(map, info_marker_8);
+        });
+
+        var info_marker_9 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.551581, 126.988072),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_9 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241117_053035178.jpg" target="_blank">11/17/2024 - North Seoul Tower</a>'
+        });
+        
+        info_marker_9.addListener('click', function() {
+            info_window_9.open(map, info_marker_9);
+        });
+
+        var info_marker_10 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.517072, 126.970850),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_10 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241117_075205826.jpg" target="_blank">11/17/2024 - Hangang Art Park Ichon By Han River</a>'
+        });
+        
+        info_marker_10.addListener('click', function() {
+            info_window_10.open(map, info_marker_10);
+        });
+
+        var info_marker_11 = new google.maps.Marker({
+            position: new google.maps.LatLng(38.163875, 128.486814),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_11 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241118_030335308.jpg" target="_blank">11/18/2024 - View from Yunusseong</a>'
+        });
+        
+        info_marker_11.addListener('click', function() {
+            info_window_11.open(map, info_marker_11);
+        });
+
+        var info_marker_12 = new google.maps.Marker({
+            position: new google.maps.LatLng(38.174246, 128.487148),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_12 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#3067d0a4-7ed9-47c6-b46d-9dd5390dc904.jpg" target="_blank">11/18/2024 - Sinheungsa Unification Great Buddha</a>'
+        });
+        
+        info_marker_12.addListener('click', function() {
+            info_window_12.open(map, info_marker_12);
+        });
+
+        var info_marker_13 = new google.maps.Marker({
+            position: new google.maps.LatLng(38.126386, 128.629742),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_13 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241118_062759510.jpg" target="_blank">11/18/2024 - NakSanSa UiSangDae</a>'
+        });
+        
+        info_marker_13.addListener('click', function() {
+            info_window_13.open(map, info_marker_13);
+        });
+
+        var info_marker_14 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.055950, 141.353242),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_14 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241119_082444855.jpg" target="_blank">11/19/2024 - Sapporo Station Underground Mall</a>'
+        });
+        
+        info_marker_14.addListener('click', function() {
+            info_window_14.open(map, info_marker_14);
+        });
+
+        var info_marker_15 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.061136, 141.356625),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_15 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241119_091936534.NIGHT.jpg" target="_blank">11/19/2024 - Sapporo TV Tower</a>'
+        });
+        
+        info_marker_15.addListener('click', function() {
+            info_window_15.open(map, info_marker_15);
+        });
+
+        var info_marker_16 = new google.maps.Marker({
+            position: new google.maps.LatLng(42.856314, 141.097647),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_16 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241120_011147775.jpg" target="_blank">11/20/2024 - Mount Eniwa?</a>'
+        });
+        
+        info_marker_16.addListener('click', function() {
+            info_window_16.open(map, info_marker_16);
+        });
+
+        var info_marker_17 = new google.maps.Marker({
+            position: new google.maps.LatLng(42.497111, 141.146106),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_17 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241120_054640448.jpg" target="_blank">11/20/2024 - Noboribetsu Jigokudani Valley</a>'
+        });
+        
+        info_marker_17.addListener('click', function() {
+            info_window_17.open(map, info_marker_17);
+        });
+
+        var info_marker_18 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.024919, 141.327528),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_18 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241121_034832746.jpg" target="_blank">11/21/2024 - Mt. Moiwa Summit Observation Deck</a>'
+        });
+        
+        info_marker_18.addListener('click', function() {
+            info_window_18.open(map, info_marker_18);
+        });
+
+        var info_marker_19 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.056000, 141.352219),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_19 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241121_115521079.jpg" target="_blank">11/21/2024 - Sapporo Food Tour</a>'
+        });
+        
+        info_marker_19.addListener('click', function() {
+            info_window_19.open(map, info_marker_19);
+        });
+
+        var info_marker_20 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.313706, 138.588003),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_20 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241123_035545716.jpg" target="_blank">11/23/2024 - Mount Fuji</a>'
+        });
+        
+        info_marker_20.addListener('click', function() {
+            info_window_20.open(map, info_marker_20);
+        });
+
+        var info_marker_21 = new google.maps.Marker({
+            position: new google.maps.LatLng(35.311500, 138.588544),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_21 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/11#PXL_20241123_040727634.LONG_EXPOSURE-01.COVER.jpg" target="_blank">11/23/2024 - Shiraito Falls With Mount Fuji Background</a>'
+        });
+        
+        info_marker_21.addListener('click', function() {
+            info_window_21.open(map, info_marker_21);
+        });
+
+        new google.maps.visualization.HeatmapLayer({
+            threshold: 10,
+            radius: 40,
+            maxIntensity: 1,
+            opacity: 0.600000,
+            dissipating: true,
+            map: map,
+            data: [
+                new google.maps.LatLng(37.569083, 126.978333),
+                new google.maps.LatLng(37.576344, 126.976978),
+                new google.maps.LatLng(37.582150, 126.983719),
+                new google.maps.LatLng(37.573878, 126.982106),
+                new google.maps.LatLng(37.890247, 126.738661),
+                new google.maps.LatLng(35.789511, 129.332075),
+                new google.maps.LatLng(35.839997, 129.211842),
+                new google.maps.LatLng(35.835692, 129.219567),
+                new google.maps.LatLng(35.835028, 129.226525),
+                new google.maps.LatLng(37.551581, 126.988072),
+                new google.maps.LatLng(37.517072, 126.970850),
+                new google.maps.LatLng(38.163875, 128.486814),
+                new google.maps.LatLng(38.174246, 128.487148),
+                new google.maps.LatLng(38.126386, 128.629742),
+                new google.maps.LatLng(43.055950, 141.353242),
+                new google.maps.LatLng(43.061136, 141.356625),
+                new google.maps.LatLng(42.856314, 141.097647),
+                new google.maps.LatLng(42.497111, 141.146106),
+                new google.maps.LatLng(43.024919, 141.327528),
+                new google.maps.LatLng(43.056000, 141.352219),
+                new google.maps.LatLng(35.313706, 138.588003),
+                new google.maps.LatLng(35.311500, 138.588544),
+            ]
+        });
+
+    }
+</script>
+</head>
+<body style="margin:0px; padding:0px;" onload="initialize()">
+    <div id="map_canvas" style="width: 100%; height: 100%;" />
+</body>
+</html>
