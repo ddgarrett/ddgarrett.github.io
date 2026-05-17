@@ -10,6 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 OUTPUT_FILE = ROOT / "index.html"
+ALL_MAPS_FILE = "all_maps.html"
 MATCH_RE = re.compile(r"^\d{4}.*\.html$")
 TITLE_RE = re.compile(r"<title>(.*?)</title>", re.IGNORECASE | re.DOTALL)
 
@@ -89,6 +90,9 @@ def build_index_html(entries: list[tuple[str, str]]) -> str:
 def main() -> None:
     files = sorted(p for p in ROOT.iterdir() if p.is_file() and MATCH_RE.match(p.name))
     entries = [(path.name, extract_title(path)) for path in files]
+    all_maps_path = ROOT / ALL_MAPS_FILE
+    if all_maps_path.is_file():
+        entries.insert(0, (ALL_MAPS_FILE, extract_title(all_maps_path)))
     OUTPUT_FILE.write_text(build_index_html(entries), encoding="utf-8")
     print(f"Wrote {OUTPUT_FILE.name} with {len(entries)} entries.")
 
