@@ -29,7 +29,7 @@ COORD_ROUND = 6
 
 BLOG_PREFIX = "https://www.garrettblog.com"
 API_KEY_RE = re.compile(
-    r"maps/api/js\?libraries=visualization&key=([^\"&]+)",
+    r"maps/api/js\?[^\"]*\bkey=([^\"&]+)",
     re.IGNORECASE,
 )
 MARKER_ICON_RE = re.compile(
@@ -154,8 +154,8 @@ def collect_entries(root: Path) -> tuple[dict[str, tuple[float, float, str]], di
 
 def merge_colocated(
     seen_urls: dict[str, tuple[float, float, str]],
-) -> list[tuple[float, float, str, list[tuple[float, float]]]]:
-    """Group by rounded lat/lon; return marker rows and heatmap points."""
+) -> list[tuple[float, float, str]]:
+    """Group by rounded lat/lon; return one marker per location."""
     groups: dict[tuple[float, float], list[str]] = defaultdict(list)
     coords: dict[tuple[float, float], tuple[float, float]] = {}
 
@@ -164,20 +164,18 @@ def merge_colocated(
         groups[key].append(part)
         coords[key] = (lat, lon)
 
-    markers: list[tuple[float, float, str, list[tuple[float, float]]]] = []
+    markers: list[tuple[float, float, str]] = []
     for key in sorted(groups.keys()):
         lat, lon = coords[key]
-        parts = groups[key]
-        content = "<BR>".join(parts)
-        heat_pts = [(lat, lon)] * len(parts)
-        markers.append((lat, lon, content, heat_pts))
+        content = "<BR>".join(groups[key])
+        markers.append((lat, lon, content))
 
     return markers
 
 
-def render_markers_js(markers: list[tuple[float, float, str, list[tuple[float, float]]]]) -> str:
+def render_markers_js(markers: list[tuple[float, float, str]]) -> str:
     lines: list[str] = []
-    for idx, (lat, lon, content, _heat) in enumerate(markers):
+    for idx, (lat, lon, content) in enumerate(markers):
         esc = js_escape_single_quoted(content)
         lines.append(f"""        var info_marker_{idx} = new google.maps.Marker({{
             position: new google.maps.LatLng({lat}, {lon}),
@@ -197,34 +195,14 @@ def render_markers_js(markers: list[tuple[float, float, str, list[tuple[float, f
     return "\n".join(lines)
 
 
-def render_heatmap_js(markers: list[tuple[float, float, str, list[tuple[float, float]]]]) -> str:
-    points: list[str] = []
-    for _lat, _lon, _content, heat_pts in markers:
-        for plat, plon in heat_pts:
-            points.append(f"                new google.maps.LatLng({plat}, {plon}),")
-    data_lines = "\n".join(points)
-    return f"""        new google.maps.visualization.HeatmapLayer({{
-            threshold: 10,
-            radius: 40,
-            maxIntensity: 1,
-            opacity: 0.600000,
-            dissipating: true,
-            map: map,
-            data: [
-{data_lines}
-            ]
-        }});"""
-
-
 def build_html(api_key: str, marker_icon_block: str, markers: list) -> str:
     markers_js = render_markers_js(markers)
-    heatmap_js = render_heatmap_js(markers)
     return f"""<html>
 <head>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <title>{OUTPUT_TITLE}</title>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&key={api_key}"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={api_key}"></script>
 <script type="text/javascript">
     function initialize() {{
         var map = new google.maps.Map(document.getElementById("map_canvas"), {{
@@ -235,7 +213,6 @@ def build_html(api_key: str, marker_icon_block: str, markers: list) -> str:
         {marker_icon_block}
 
 {markers_js}
-{heatmap_js}
 
     }}
 </script>
@@ -274,7 +251,6 @@ def main() -> int:
 
     seen_urls, stats = collect_entries(root)
     markers = merge_colocated(seen_urls)
-    heat_points = sum(len(m[3]) for m in markers)
 
     out_path = root / OUTPUT_NAME
     out_path.write_text(build_html(api_key, marker_icon, markers), encoding="utf-8")
@@ -288,7 +264,6 @@ def main() -> int:
     print(f"  duplicates skipped: {stats['duplicates_skipped']}")
     print(f"Unique photos: {len(seen_urls)}")
     print(f"Markers after co-locate merge: {len(markers)}")
-    print(f"Heatmap points: {heat_points}")
     print(f"Wrote {out_path}")
     return 0
 

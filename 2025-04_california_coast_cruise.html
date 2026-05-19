@@ -3,7 +3,7 @@
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <title>April 2025 California Coast Cruise</title>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&key=AIzaSyAAmtAIf4UsOHP_czPJV4Sb2vSDPaFPfOM"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAmtAIf4UsOHP_czPJV4Sb2vSDPaFPfOM"></script>
 <script type="text/javascript">
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
@@ -106,22 +106,6 @@
             info_window_5.open(map, info_marker_5);
         });
 
-        new google.maps.visualization.HeatmapLayer({
-            threshold: 10,
-            radius: 40,
-            maxIntensity: 1,
-            opacity: 0.600000,
-            dissipating: true,
-            map: map,
-            data: [
-                new google.maps.LatLng(37.791297, -122.391906),
-                new google.maps.LatLng(35.845319, -123.098261),
-                new google.maps.LatLng(34.415042, -119.690200),
-                new google.maps.LatLng(33.986414, -118.473144),
-                new google.maps.LatLng(32.736981, -117.150281),
-                new google.maps.LatLng(31.850514, -116.588406),
-            ]
-        });
 
     }
 </script>

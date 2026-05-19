@@ -3,7 +3,7 @@
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <title>August 18, 2023 - Second Time Through Prince Christian Sound</title>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&key=AIzaSyAAmtAIf4UsOHP_czPJV4Sb2vSDPaFPfOM"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAmtAIf4UsOHP_czPJV4Sb2vSDPaFPfOM"></script>
 <script type="text/javascript">
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
@@ -61,19 +61,6 @@
             info_window_2.open(map, info_marker_2);
         });
 
-        new google.maps.visualization.HeatmapLayer({
-            threshold: 10,
-            radius: 40,
-            maxIntensity: 1,
-            opacity: 0.600000,
-            dissipating: true,
-            map: map,
-            data: [
-                new google.maps.LatLng(60.088128, -43.361889),
-                new google.maps.LatLng(60.177425, -43.630103),
-                new google.maps.LatLng(60.157039, -44.276622),
-            ]
-        });
 
     }
 </script>

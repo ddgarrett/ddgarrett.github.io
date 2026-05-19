@@ -3,7 +3,7 @@
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <title>UWC - F&F</title>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&key=AIzaSyAAmtAIf4UsOHP_czPJV4Sb2vSDPaFPfOM"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAmtAIf4UsOHP_czPJV4Sb2vSDPaFPfOM"></script>
 <script type="text/javascript">
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
@@ -376,40 +376,6 @@
             info_window_23.open(map, info_marker_23);
         });
 
-        new google.maps.visualization.HeatmapLayer({
-            threshold: 10,
-            radius: 40,
-            maxIntensity: 1,
-            opacity: 0.600000,
-            dissipating: true,
-            map: map,
-            data: [
-                new google.maps.LatLng(21.333242, -157.870875),
-                new google.maps.LatLng(-33.858467, 151.211258),
-                new google.maps.LatLng(-33.859644, 151.212836),
-                new google.maps.LatLng(-8.742564, 115.211686),
-                new google.maps.LatLng(22.282128, 114.153433),
-                new google.maps.LatLng(22.271031, 114.150092),
-                new google.maps.LatLng(22.270933, 114.152333),
-                new google.maps.LatLng(33.525911, 126.544236),
-                {location: new google.maps.LatLng(37.581172, 126.978522), weight: 2.000000},
-                new google.maps.LatLng(37.581133, 126.978461),
-                new google.maps.LatLng(31.598347, 130.555953),
-                new google.maps.LatLng(35.455111, 139.632556),
-                new google.maps.LatLng(35.020661, 138.490564),
-                new google.maps.LatLng(35.028436, 138.539194),
-                new google.maps.LatLng(34.656603, 135.431253),
-                new google.maps.LatLng(-33.441656, 25.764358),
-                new google.maps.LatLng(-33.439647, 25.791456),
-                {location: new google.maps.LatLng(-33.476122, 25.823200), weight: 2.000000},
-                new google.maps.LatLng(-33.478675, 25.827736),
-                new google.maps.LatLng(-33.462561, 25.784717),
-                new google.maps.LatLng(-33.462578, 25.784481),
-                new google.maps.LatLng(-33.959453, 18.404697),
-                new google.maps.LatLng(14.693553, -17.462083),
-                new google.maps.LatLng(14.692806, -17.447611),
-            ]
-        });
 
     }
 </script>
