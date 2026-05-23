@@ -1,0 +1,355 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>August 2024 - Cross Country Denver Trip</title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&key=AIzaSyAAmtAIf4UsOHP_czPJV4Sb2vSDPaFPfOM"></script>
+<script type="text/javascript">
+    function initialize() {
+        var map = new google.maps.Map(document.getElementById("map_canvas"), {
+            zoom: 6,
+            center: new google.maps.LatLng(39.877583, -113.090254)
+        });
+
+        var marker_icon_FF0000 = {
+            url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAiCAYAAACwaJKDAAAABmJLR0QA/wD/AP+gvaeTAAACBklEQVRIia3VzUtUURgH4GdG/AiyZZShtWgXUbSIFtGqRYtqWRLhXyBYf0K6MaJQ2gRtayHtijYpleHKSCgIcRHoIiOSKEzLKea0OOeqTfPlzPzg5Qwz9zz3nXPvPTeneo7gNA4gjyI+Ygbva8z9L2cxi9BHOE+4msY+gliz6biayWE0R7GfMEcoEkJJzRH6CbnY+WiaVxEc6yY8KQOVq8eE7tj1WCV4qIswUyeY1QyhK8JDpWAP1m7vEMzqTkTXkrOZkYOEQoNogXAowiPE2wQuDqC9nktZJu0YSE72XRs2phrsMqup2OkG2vLpRB19DXaZJc3vQHv294Um0e3z8yigsNQkmuYXUMie5/npJtE0fz55YLiXsNHELdUbV2B4+4n2Y/Vmg+itCK4m558MdhBe7hCcJnRGdLDS0ox3E17XCb4h7IngeLX1zuFhD2G5BriytY4Tqmx9WXbh3Tnl99KsLkdwAbtrgVmO4/eDCuCkzd3/TL1glru9hF8lYJFwMoKPdgrCXqzfL0GfR7CIo42gcO9YCXopolONgnAC4W0Cv9l8dVxpBoWFGwmdiOC6Glc8X+3HlKeT6cOzOLzAjyaaBBc602ZzOHZ6vVkQ9kl7Qi6ip1qBwpdrEfwjPnFVU8+awuKrOC7hZ6vQlQ9baM3Ui379HsfVVqKf07jcSvRTGhfrOfgvIP3ECS77BDoAAAAASUVORK5CYII=",
+            labelOrigin: new google.maps.Point(10, 11)
+        };
+
+        var info_marker_0 = new google.maps.Marker({
+            position: new google.maps.LatLng(42.593917, -114.401642),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_0 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240810_154912302.LONG_EXPOSURE-01.COVER.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvlhNdoSRjOfcd2cpX_m9oJxHbsE6G6jTDpdFqsPjeG9y4WCP-UXd-A4T4TI2FbOneyOgzpIE-n53txT28jXQdlFOdpT_RXzDoto59lnh3aeAPpWJf9xqxepanKsAeVm6Io2_JgVXLZPcAPutJ1ufLs60no6fnfQwrIfrhyIY1Ne6CuyWCT3QlQd2H83s/s600/PXL_20240810_154912302.LONG_EXPOSURE-01.COVER.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240810_154912302.LONG_EXPOSURE-01.COVER.jpg" target="_blank">08/10/2024 - Twin Falls</a>'
+        });
+        
+        info_marker_0.addListener('click', function() {
+            info_window_0.open(map, info_marker_0);
+        });
+
+        var info_marker_1 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.806389, -110.528228),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_1 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240811_004955881.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirUnoXUP9hWVRDXHSUiTBNwRerrjPrTtDtRfmQu_OsRK71P-eHeNP7tFUOQz60mhXEsRZB1MVIeTPJ1QaaFIxEy9KCwQWgKUqXk2FCGzNxXVj7J8MX1Mw5qETRNemuTpBr3x_IGa_XP_GfxAn-25ZNGVfNfX5Q8QfOq2thHyI5_m_BjmCP1O3On6SeLkU/s600/PXL_20240811_004955881.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240811_004955881.jpg" target="_blank">08/10/2024 - Grand Teton NP Bison</a>'
+        });
+        
+        info_marker_1.addListener('click', function() {
+            info_window_1.open(map, info_marker_1);
+        });
+
+        var info_marker_2 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.866011, -110.547947),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_2 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240811_012236575.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXZnzdJSwSzrlsGyKmXdCuoLqhOgK1Fc3C88n0qzoYzty-ebhluSodCH3kP2XUGlSy_7018YvmKxs92_uoKtwnkRzsGc4csIcrWCEt4bxXi3WMWNwFMwDequMB3sebNdHOfHxqm80qaviCp-ke31RuFGKzQTAuWVX6INWL8Xc9ywo5KsHy4Xzg02VUZS0/s600/PXL_20240811_012236575.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240811_012236575.jpg" target="_blank">08/10/2024 - Oxbow Bend and Mount Moran - Grand Teton NP</a>'
+        });
+        
+        info_marker_2.addListener('click', function() {
+            info_window_2.open(map, info_marker_2);
+        });
+
+        var info_marker_3 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.866131, -110.548492),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_3 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240811_125446161.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwm7OxRNDTCu4i-zN5bBt3EzequLU14jphSOKmfPLRzo9AYg-vnXqQbN465Yg4m4T5niRDctcvaHVTmAXoXva8xi0ycx1ZQCZysfO0m8rmHVJcwmdia_96K6KCOTA49vq42eB2HvEkomu0CiJbK2sq5weEf8ZS5CdAvvWQ2DXR_ysw_DntYwR1g4ksXnk/s600/PXL_20240811_125446161.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240811_125446161.jpg" target="_blank">08/11/2024 - Mt Moran Oxbow Bend Snake River</a>'
+        });
+        
+        info_marker_3.addListener('click', function() {
+            info_window_3.open(map, info_marker_3);
+        });
+
+        var info_marker_4 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.459681, -110.828472),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_4 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240811_172231795.LONG_EXPOSURE-01.COVER.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbYYkxVOoOjZVJ_7mtQ6oRED_TX-WiFLcWhILJdke-X4RGAwX-cTcZtuk4K4v0CpnCLYgmh1mrcFcIGWRSo7_Njin6NzYuG2_xkeMDu4FMh2Qo-Lwi2n_a2hNnwiBGmn30uAjlyySWa5QmUeDANUUcUNKQ7k3gjqQ6RZ3w1u1XHr7DyzBc6kO75XuNzhw/s600/PXL_20240811_172231795.LONG_EXPOSURE-01.COVER.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240811_172231795.LONG_EXPOSURE-01.COVER.jpg" target="_blank">08/11/2024 - Old Faithful - Yellowstone NP</a>'
+        });
+        
+        info_marker_4.addListener('click', function() {
+            info_window_4.open(map, info_marker_4);
+        });
+
+        var info_marker_5 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.418214, -110.572008),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_5 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240811_215947845.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwxYCGwaO0qHipQSEH4xuW182p6Os7c5kO3XDYjVJKs7EdVI1_V4tk3SBGyu5_Z7JuFYvG2lv4xLVcreJkXOxx9qHqHr9y1ng3i1pZDrWIdjpeRRWHIkHkow13oMAHnDBJ1rzBUSrJ8HAmUhTQDtWUp-M18XITlKGpBD33Nug8rSY0jhd-bpIjhSyT1oo/s600/PXL_20240811_215947845.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240811_215947845.jpg" target="_blank">08/11/2024 - Abyss Pool on Yellowstone Lake West Thumb</a>'
+        });
+        
+        info_marker_5.addListener('click', function() {
+            info_window_5.open(map, info_marker_5);
+        });
+
+        var info_marker_6 = new google.maps.Marker({
+            position: new google.maps.LatLng(40.562181, -105.037839),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_6 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240813_182821684.PORTRAIT.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8ys7g2DuKNjqyf4fcpeXs1W5ysW228MyBUWtn-OuWujFucIlH_seuCkiG3462hMtxnQnopvOqY_FFKOuaNyJWPmE0wAri9ewDl9EIa_zJnEjRN_T5SRsxMtzJdvr4bEozYnjGSgrvftk1HRbfxiMt5fDgij9Mrtz0Y72k_BvBp3lSFyx7orKYrhPUGpw/s600/PXL_20240813_182821684.PORTRAIT.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240813_182821684.PORTRAIT.jpg" target="_blank">08/13/2024 - The Farmhouse at Jessup Farm - Beer Flight</a>'
+        });
+        
+        info_marker_6.addListener('click', function() {
+            info_window_6.open(map, info_marker_6);
+        });
+
+        var info_marker_7 = new google.maps.Marker({
+            position: new google.maps.LatLng(40.443914, -105.751292),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_7 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240814_182610986.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhO8J7G7oDXcTdap_QePXB29IsM_zalrSHIakMkCfzpWXN68GjGhmmNVNM9nX3YS3-2B2i7S97kBlXjx20OZwj2MEjdwvE6Sxf8mjbfC9k_UN3JWRcu_yEW32WbFDnSCtMAFrAXu0UV3w0GQR7Sq7B1FnPWtVTYGpRmUHwQo_rB7sNFtyhFrEZ_3R4krWo/s600/PXL_20240814_182610986.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240814_182610986.jpg" target="_blank">08/14/2024 - Rocky Mountain NP Visitor Center</a>'
+        });
+        
+        info_marker_7.addListener('click', function() {
+            info_window_7.open(map, info_marker_7);
+        });
+
+        var info_marker_8 = new google.maps.Marker({
+            position: new google.maps.LatLng(39.665519, -105.205883),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_8 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240819_172000681.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY0_UbpIa1NAWWkMVv-W_luLgH9xCKXC-q6TmPg27xrk9dS2t9tbRFviXwjJun-iIfeYX6yLTOtWaKJE9APVngsGAPkfNT7ldeT46b5pN80d-D0Ye3siguHnpikT-pCCMR-hjIshcOm7LwiQtkPq7nU-sT9CyLmTgzo3qDNPZ3ZWc5oQ1o1nUyHR2cbEE/s600/PXL_20240819_172000681.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240819_172000681.jpg" target="_blank">08/19/2024 - Red Rocks Amphitheatre</a>'
+        });
+        
+        info_marker_8.addListener('click', function() {
+            info_window_8.open(map, info_marker_8);
+        });
+
+        var info_marker_9 = new google.maps.Marker({
+            position: new google.maps.LatLng(39.090472, -108.723211),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_9 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240821_172611855.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFKa6T1hGKulDQLr75CpDeDDkat86f21OEb9rkJeycaAMrTsPNoTBq40KesL0WfdPcnm2MXACd4zn_vwV7bV1HZ709GRw4gNuXG9TeUvJBkwIThWHxTFsC466Emcy5IPu4FQzxeKU2LdZGNTA4rSmlgOPCpTiENxGOBxpf-4q31xvMgYXaah_QuqDSHCg/s600/PXL_20240821_172611855.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240821_172611855.jpg" target="_blank">08/21/2024 - Colorado National Monument - Grand View</a>'
+        });
+        
+        info_marker_9.addListener('click', function() {
+            info_window_9.open(map, info_marker_9);
+        });
+
+        var info_marker_10 = new google.maps.Marker({
+            position: new google.maps.LatLng(39.066186, -108.566294),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_10 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240821_201457579.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIWsTiZW_EbUbnQWj0R1K6yZLDGcSiUMJla2mnGG0l2_GpOlrKAUc1eAIs7sPp2dIWD5NbaSRh_zmXz0HXHG_2qRcVX0c8wyTC_hYxUvxUR8NdeuejJY09ZfEtf2PMVGD4eA4ogljIb8OeWruFb9AxPXL1mkCBWAnNlIhvRClANMD2Qzt4U3X9Nu7GROA/s600/PXL_20240821_201457579.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240821_201457579.jpg" target="_blank">08/21/2024 - Feisty Pint Brewpub</a>'
+        });
+        
+        info_marker_10.addListener('click', function() {
+            info_window_10.open(map, info_marker_10);
+        });
+
+        var info_marker_11 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.623094, -112.166731),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_11 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240824_014158902.PANO.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMMvamRtofm1xkTTDE7jDB4ootArbbuQb0ppH-g_B8X3U_fBu8jVsS75NCG-rf1HVB0-kqgMNHR744O4VrvAFlirh_gOGJavqCs7HCdMvNVE-WLD1yZlwTeG_U0a3HRvRM95BLp5_mdowMODut1Tb2eslONrB22I_QsoZJ4qPoIxFO91Z1QVH5yW0EH7Y/s600/PXL_20240824_014158902.PANO.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240824_014158902.PANO.jpg" target="_blank">08/23/2024 - Bryce Canyon Hoodoos</a>'
+        });
+        
+        info_marker_11.addListener('click', function() {
+            info_window_11.open(map, info_marker_11);
+        });
+
+        var info_marker_12 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.622731, -112.165944),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_12 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240824_015801390.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMkpckEwm3LnqfUU9929Mfy-bUymr_ZKuq_E-BUCenjau3wK1Oj8Q3-TUetySdUR3Z-7nnlZ8gKtcQU89tSyoho8BYMtMJNO51klxJSKCXc8Be5M29rL-QqyUNsNxki3NUQy6tA_cPLIhEyZFlsscNRFT8TegvPaWNhGT2ubw2xULZpAwLFi8A7SQ7yyE/s600/PXL_20240824_015801390.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240824_015801390.jpg" target="_blank">08/23/2024 - Bryce Canyon Under Dramatic Skies</a>'
+        });
+        
+        info_marker_12.addListener('click', function() {
+            info_window_12.open(map, info_marker_12);
+        });
+
+        var info_marker_13 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.745883, -112.319225),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_13 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240824_160554958.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGzfVFmh4WRmw3qpCAP-lqKkuC68c7pqshKbFbXf6MlWDUcNKRODYSpHYQ164TxuS4d5OA-ToR3wrpt9vtku-4pFSyD2sHqunO_qMSKSO6Dr6ELrs9QdN2Z9qFSqneC_Bt64myWjhdIjt1bdVDh5xr6ekDyopGVgrr2_MQSK8vK9lElejnZcUA20d7Zlo/s600/PXL_20240824_160554958.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240824_160554958.jpg" target="_blank">08/24/2024 - Red Canyon Visitor Center</a>'
+        });
+        
+        info_marker_13.addListener('click', function() {
+            info_window_13.open(map, info_marker_13);
+        });
+
+        var info_marker_14 = new google.maps.Marker({
+            position: new google.maps.LatLng(39.005276, -114.216703),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_14 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240825_180059040.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEflfkFggItXw22_0GLgWQ0lhKGJbs00JT8Po7LgoUMozYSzTbOXUdsJLOKB060DTsxtibKvvLhB5qk2VxUfAnWWFXJgCSQ0WfocBisDBPA_Rnw-dHWtCTIi4Bz1cXc4d-3ZpKYdLJB7lm8vp05PrfoE5zFlaLa_RV5bGl3cRiOtGZQmL-ePvTfwtEt8w/s600/PXL_20240825_180059040.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240825_180059040.jpg" target="_blank">08/25/2024 - Lehman Caves</a><BR><a href="https://www.garrettblog.com/2024/08#PXL_20240825_180829644.NIGHT.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNZJFKhWuEuzLpSLRrHcQhDkiPoLnR1QdRtfuN2Dj-R5d8ssZEcpRQdDTF0ieke6QONJDWkuG2qb2KrjZcFT_YeYV_KUtVHKF5b6-5xj9gXN_Kl-yaeekYXPN1fAZdMqLsaXEl8fiBfrGGOp3cwsUCHFcD84TGuTETzD8IEbFpGe4FKSc2-B3kLRpUQ0Q/s600/PXL_20240825_180829644.NIGHT.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240825_180829644.NIGHT.jpg" target="_blank">08/25/2024 - Lehman Caves</a>'
+        });
+        
+        info_marker_14.addListener('click', function() {
+            info_window_14.open(map, info_marker_14);
+        });
+
+        var info_marker_15 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.631011, -119.033453),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_15 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240827_165246984.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj37IxegPw6oZa4FBcfMQawHI1E7FlPCcymz6evajdjT30IP9Z013SAUi4hXbCMI6kQATZC7WKnDPo_dnUYdgZ2WYlOLcuI_k-kr-yK320zSd0bRB2-EUQzexXHk0sNWuibdcd4awBVYO1SGba6nuGBJ68cOcVZxUDvllWkM0OyfOqrfS8QLwJzeS5pRH8/s600/PXL_20240827_165246984.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240827_165246984.jpg" target="_blank">08/27/2024 - View from Mammoth Mountain</a>'
+        });
+        
+        info_marker_15.addListener('click', function() {
+            info_window_15.open(map, info_marker_15);
+        });
+
+        var info_marker_16 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.650367, -118.963100),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_16 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240828_144249600.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitg3jVnWZ2NqwC0CHGLRE0fNSox0h2V0lFylMW5GtWh8W2B1GVRZgnEYVj7CHkI004hlkSBBFZt1taMXEL0vfjYGV2iqy-pybzo5Kty86Q-kvTlkx4xnb2m5O8AjTcK00Ie_7c-XXkFrj7_aa3yb9Kfn9UC7NRcn3arTlyo6Ubn3Gaswl029St9oaIqPY/s600/PXL_20240828_144249600.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240828_144249600.jpg" target="_blank">08/28/2024 - Shady Rest Campground</a>'
+        });
+        
+        info_marker_16.addListener('click', function() {
+            info_window_16.open(map, info_marker_16);
+        });
+
+        var info_marker_17 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.967414, -119.119722),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_17 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240828_175948966.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcLSh3XvAb8QAkeBlnbXuJCKo111Ex1a2NBTt_SDs58TnECxoA10J7gae0c79Xuq8u59MdyMPhA-bNFuzC4x7-6yALvTibM-zbKxM7uQoKsTnvkwhikUWmKUGNxUesC7DQxdxLDlPcCh20sE8KuXSXXwJ4DYsbd2AxuAupp30WQlDPbEGRCetzm-F624Y/s600/PXL_20240828_175948966.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240828_175948966.jpg" target="_blank">08/28/2024 - Mono Lake</a>'
+        });
+        
+        info_marker_17.addListener('click', function() {
+            info_window_17.open(map, info_marker_17);
+        });
+
+        var info_marker_18 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.836103, -119.454644),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_18 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240828_200120669.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgewTLpKw_hnM5rayjYqWRvwTeWTKhTsHB_qDYU8g4Myit4-BqPhcaEN0BCkkuchS9yQBR8_NNpNlRwgnafrvxIbBSru2ub-ptOZ0d-3ZjYUIuB_5e9OoLCNqolTAX90tgMy3oHg3XYGJDB1oaMZVZTN3zG4lnKrU5M4ddreZsPrQDzFeeiPGOlIOftElY/s600/PXL_20240828_200120669.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240828_200120669.jpg" target="_blank">08/28/2024 - Tenaya Lake</a>'
+        });
+        
+        info_marker_18.addListener('click', function() {
+            info_window_18.open(map, info_marker_18);
+        });
+
+        var info_marker_19 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.810683, -119.485506),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_19 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240828_205911933.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJrx_Lp_Gevxugem0x9TcJvk9fKzJSWJ0EiXDZ7IwzSlegMRp1A9AUltcRLZ41FlY3aZqjccTO-rvJdzNRdvNwGDhVZWqJ6rPlGWw8LrlyU8sHtVIbQngj1OIQnvPs7R0otQvmpB8rgNEz9k5lLGBt6gNQx0w0mByKDD6-HovaIvRiA07Y1wn5mBr3SmI/s600/PXL_20240828_205911933.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240828_205911933.jpg" target="_blank">08/28/2024 - Half Dome from Clouds Rest</a>'
+        });
+        
+        info_marker_19.addListener('click', function() {
+            info_window_19.open(map, info_marker_19);
+        });
+
+        var info_marker_20 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.730578, -119.573589),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_20 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240829_180046905.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqjT0RUBrO8vHyiGAhi66dqeSMQsSWBbWJg6JenltHMzpEyj-4zjYNXyE9btt5TfDgm_t8Y65Yng7e6SdhVban0RhPjomokHmPx4vfNKjlutWjpGBF2dfYUE_7s0Kk2Bucs_IBPy7m1y1suz36E4_GYH9ZY-LOF5KbpW0Mivjsr_jkqr1Ec-rY5MQYsxA/s600/PXL_20240829_180046905.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240829_180046905.jpg" target="_blank">08/29/2024 - Half Dome From Glacier Point</a>'
+        });
+        
+        info_marker_20.addListener('click', function() {
+            info_window_20.open(map, info_marker_20);
+        });
+
+        var info_marker_21 = new google.maps.Marker({
+            position: new google.maps.LatLng(37.717381, -119.649225),
+            label: "I",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_21 = new google.maps.InfoWindow({
+            content: '<a href="https://www.garrettblog.com/2024/08#PXL_20240829_191401353.LONG_EXPOSURE-01.COVER.jpg" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ4oFK4FXefBOaIHWX6DaLom7-CnxrnmAV6S4qk6ryCSGVzcvlv5e1G5BYRtJqBMS8CHINrInQjPEsob2Si91GU7xr3A6_YPnzA71EdmWPHmsGP9MUVcFGcosXMqgc4ZH0rb8_6C5ZS6aXGRmFlxkE-zYI_giLcQNF1QTO5oJL1hSHq9IVRjO-KunP1ig/s600/PXL_20240829_191401353.LONG_EXPOSURE-01.COVER.jpg" alt="" style="max-width:120px;height:auto;display:block;margin:0 auto 8px;"></a><a href="https://www.garrettblog.com/2024/08#PXL_20240829_191401353.LONG_EXPOSURE-01.COVER.jpg" target="_blank">08/29/2024 - Bridalveil Falls</a>'
+        });
+        
+        info_marker_21.addListener('click', function() {
+            info_window_21.open(map, info_marker_21);
+        });
+
+    }
+</script>
+</head>
+<body style="margin:0px; padding:0px;" onload="initialize()">
+    <div id="map_canvas" style="width: 100%; height: 100%;" />
+</body>
+</html>
