@@ -15,7 +15,6 @@ OUTPUT_TITLE = "All Trips Photo Map"
 
 IGNORE_HTML_FILES = [
     "index.html",
-    "2024-05_eastern_europe.html",
     "uwc_f_n_f.html",
     "2023-04_japan_trip-initial_map.html",
     "2024-02-14_valentines_day_map.html",
