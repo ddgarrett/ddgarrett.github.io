@@ -125,40 +125,40 @@
     <div class="status" id="status-bar">IDLE</div>
     <button id="perm-btn">Enable Motion (iOS)</button>
 
-<script>
-    const responseMatrix = {
-        Sarcastic: [
-            "Sure, if you consider a miracle to be a valid strategy.",
-            "Reply hazy, try asking me after I've had my coffee.",
-            "Signs point to yes, strictly to spite your enemies.",
-            "Don't count on it. Just like you counting on finding your keys.",
-            "Ask again later when I care a little bit more.",
-            "Yes, absolutely. In an alternate reality, that is.",
-            "The stars say yes, but my common sense says absolutely not.",
-            "Outlook looks great, if you completely lower your standards."
-        ],
-        Witty: [
-            "Yes, and I'll even pretend it was your idea all along.",
-            "My sources say no, and by sources, I mean your track record.",
-            "Concentrate and ask again when you aren't being ridiculous.",
-            "Error 404: Valid answer not found for this level of logic.",
-            "The odds are entirely in your favor, assuming the math is wrong.",
-            "I’d give you an answer, but we both know you won't listen anyway.",
-            "Signs point to yes, but proceed with your usual lack of caution.",
-            "My response depends entirely on whether you are paying for dinner."
-        ],
-        Brutal: [
-            "Very doubtful. Honestly, I'm embarrassed for you for even asking.",
-            "Better not tell you now. I don't want to deal with your crying face.",
-            "Outlook bleak, even the universe is shaking its head at this point.",
-            "No. Absolute hard pass. Go back to sleep.",
-            "Signs point to no, but at least you are consistent at failing.",
-            "Absolutely not. Don't ever ask me that again.",
-            "Yes, if your goal is spectacular, unmitigated disaster.",
-            "No, and deep down in your soul, you already knew that was the answer."
-        ]
-    };
 
+    <script>
+        const responseMatrix = {
+            Sarcastic: [
+                "Sure, if you consider a miracle to be a valid strategy.",
+                "Reply hazy, try asking me after I've had my coffee.",
+                "Signs point to yes, strictly to spite your enemies.",
+                "Don't count on it. Just like you counting on finding your keys.",
+                "Ask again later when I care a little bit more.",
+                "Yes, absolutely. In an alternate reality, that is.",
+                "The stars say yes, but my common sense says absolutely not.",
+                "Outlook looks great, if you completely lower your standards."
+            ],
+            Witty: [
+                "Yes, and I'll even pretend it was your idea all along.",
+                "My sources say no, and by sources, I mean your track record.",
+                "Concentrate and ask again when you aren't being ridiculous.",
+                "Error 404: Valid answer not found for this level of logic.",
+                "The odds are entirely in your favor, assuming the math is wrong.",
+                "I’d give you an answer, but we both know you won't listen anyway.",
+                "Signs point to yes, but proceed with your usual lack of caution.",
+                "My response depends entirely on whether you are paying for dinner."
+            ],
+            Brutal: [
+                "Very doubtful. Honestly, I'm embarrassed for you for even asking.",
+                "Better not tell you now. I don't want to deal with your crying face.",
+                "Outlook bleak, even the universe is shaking its head at this point.",
+                "No. Absolute hard pass. Go back to sleep.",
+                "Signs point to no, but at least you are consistent at failing.",
+                "Absolutely not. Don't ever ask me that again.",
+                "Yes, if your goal is spectacular, unmitigated disaster.",
+                "No, and deep down in your soul, you already knew that was the answer."
+            ]
+        };
 
         const styles = ["Sarcastic", "Witty", "Brutal"];
         let isMoving = false;
@@ -198,7 +198,10 @@
                 intervalTimer = setInterval(processMotionStep, 100);
             }
             clearTimeout(motionTimeout);
-            motionTimeout = setTimeout(() => { stopMotionDetection(); }, 600);
+            
+            // PIXEL FIX 1: Increased from 600ms to 1200ms. 
+            // Gives the phone more time to catch up between shake intervals.
+            motionTimeout = setTimeout(() => { stopMotionDetection(); }, 1200); 
         }
 
         function stopMotionDetection() {
@@ -227,18 +230,36 @@
         let lastX = null, lastY = null, lastZ = null;
         function handleMotion(event) {
             let acceleration = event.accelerationIncludingGravity;
-            if (!acceleration.x) return;
+            if (!acceleration || !acceleration.x) return;
+
+            // Initialize on first movement
+            if (lastX === null) {
+                lastX = acceleration.x;
+                lastY = acceleration.y;
+                lastZ = acceleration.z;
+                return;
+            }
+
             let deltaX = Math.abs(lastX - acceleration.x);
             let deltaY = Math.abs(lastY - acceleration.y);
             let deltaZ = Math.abs(lastZ - acceleration.z);
 
-            if ((deltaX > 12 && deltaY > 12) || (deltaX > 12 && deltaZ > 12) || (deltaY > 12 && deltaZ > 12)) {
+            // PIXEL FIX 2: Lowered the threshold from 12 to 5.
+            // Makes the app way more sensitive to casual hand-shaking.
+            if (deltaX > 5 || deltaY > 5 || deltaZ > 5) {
                 startMotionDetection();
             }
-            lastX = acceleration.x; lastY = acceleration.y; lastZ = acceleration.z;
+            
+            lastX = acceleration.x; 
+            lastY = acceleration.y; 
+            lastZ = acceleration.z;
         }
 
-        if (window.DeviceMotionEvent && typeof DeviceMotionEvent.requestPermission === 'function') {
+        // Auto-initialize sensor for Android / Pixel (No explicit permission pop-up needed)
+        if (window.DeviceMotionEvent && typeof DeviceMotionEvent.requestPermission !== 'function') {
+            window.addEventListener('devicemotion', handleMotion);
+        } else if (window.DeviceMotionEvent) {
+            // Apple/iOS pathway fallback
             permBtn.style.display = "block";
             document.getElementById('instruction').innerText = "Click below to enable mobile tilt.";
             permBtn.addEventListener('click', () => {
@@ -250,9 +271,8 @@
                     }
                 });
             });
-        } else {
-            window.addEventListener('devicemotion', handleMotion);
         }
     </script>
+
 </body>
 </html>
